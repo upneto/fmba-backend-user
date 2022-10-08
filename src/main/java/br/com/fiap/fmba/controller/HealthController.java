@@ -12,6 +12,6 @@ public class HealthController {
 
 	@GetMapping
 	public ResponseEntity<?> login() {
-		return new ResponseEntity<>(HttpStatus.OK);
+		return new ResponseEntity<>("<div style='background-color:#55eb1a;' ><h1>Ativo!!</h1></div>", HttpStatus.OK);
 	}
 }
