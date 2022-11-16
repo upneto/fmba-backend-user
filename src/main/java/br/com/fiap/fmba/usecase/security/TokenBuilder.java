@@ -34,7 +34,7 @@ public final class TokenBuilder {
 				.setSubject(usuario)
 				.setIssuer("fmba-backent-user")
 				.setIssuedAt(new Date())
-				.setExpiration(Date.from(LocalDateTime.now().plusMinutes(15L).atZone(ZoneId.systemDefault()).toInstant()))
+				.setExpiration(Date.from(LocalDateTime.now().plusMinutes(60L).atZone(ZoneId.systemDefault()).toInstant()))
 				.signWith(Keys.hmacShaKeyFor(SECRET.getBytes(StandardCharsets.UTF_8)))
 				.compact();
 	}
