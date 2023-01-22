@@ -1,4 +1,4 @@
-package br.com.fiap.fmba.controller;
+package br.com.fiap.fmba.controller.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
